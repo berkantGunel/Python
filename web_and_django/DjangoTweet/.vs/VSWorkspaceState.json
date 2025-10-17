@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\djangotweet",
+    "\\djangotweet\\djangotweet",
+    "\\djangotweet\\templates",
+    "\\djangotweet\\tweetapp",
+    "\\djangotweet\\tweetapp\\migrations",
+    "\\djangotweet\\tweetapp\\static",
+    "\\djangotweet\\tweetapp\\static\\tweetapp",
+    "\\djangotweet\\tweetapp\\templates",
+    "\\djangotweet\\tweetapp\\templates\\tweetapp"
+  ],
+  "PreviewInSolutionExplorer": false
+}

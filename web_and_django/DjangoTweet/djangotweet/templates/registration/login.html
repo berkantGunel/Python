@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <!-- Error Message -->
+    {% if form.errors %}
+        <div class="alert alert-danger" role="alert">
+            Your username and password didn't match. Please try again.
+        </div>
+    {% endif %}
+
+    {% if user.is_authenticated %}
+    <h2 class="text-center py-4 px-3 bg-primary text-white rounded-3 shadow-sm">
+        Welcome, {{ user.username }}
+    </h2>
+    {% else %}
+        <div class="container">
+            <form method="POST" action="{% url 'login' %}">
+                <div class="row justify-content-center">
+                    {% csrf_token %}
+                    <div class="col-md-6">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h3 class="text-center mb-4">Login</h3>
+
+                                {% for field in form %}
+                                    <div class="mb-3">
+                                        <label for="{{ field.id_for_label }}" class="form-label">{{ field.label }}</label>
+                                        {{ field }}
+                                        {% if field.errors %}
+                                            <div class="invalid-feedback">
+                                                {% for error in field.errors %}
+                                                    <p>{{ error }}</p>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                {% endfor %}
+
+                                <button type="submit" class="btn btn-primary w-100">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    {% endif %}
+
+{% endblock %}
