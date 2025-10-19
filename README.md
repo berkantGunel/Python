@@ -45,7 +45,7 @@ Experiments with OpenCV and Mediapipe.
 ---
 
 ## 🧰 Tools I Used
-`Python`, `Pandas`, `OpenCV`, `Requests`, `BeautifulSoup`, `Matplotlib`, `Django`
+`Python`, `Pandas`, `OpenCV`, `Requests`, `BeautifulSoup`, `Matplotlib`, `Django`, 'Pythorch', 'Tensorflow' etc.
 
 ---
 
