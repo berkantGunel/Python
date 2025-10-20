@@ -1,0 +1,18 @@
+# Python cache ve geçici dosyalar
+__pycache__/
+*.pyc
+
+# PyInstaller build dosyaları
+/build/
+dist/
+*.spec
+
+
+
+# IDE ayarları
+.vscode/
+.idea/
+
+# Windows dosyaları
+Thumbs.db
+desktop.ini
